@@ -24,7 +24,7 @@ public class Main
 		System.out.print("Please Enter your passwored: ");
 		String passEntry = input.nextLine();
 		
-		while (passEntry != pass) {
+		while (!passEntry.contains(pass)) {
 		    if(att == 4) {
     		        System.out.println("Too many attempts, you have been locked out");
     		        success = false;
